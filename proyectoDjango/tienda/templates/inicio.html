@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title %} Pagina de incio de empleados {% endblock title %} 
+
+{% block content %}
+{% include 'includes/header.html' %}
+<img src="{% static 'img/logo-istg-2.png' %}" class="float-center">
+  <div class="grid-x">
+<div class="grid-container" data-equalizer data-equalize-on="medium" id="test-eq">
+  <div class="cell medium-4">
+    <div class="callout" data-equalizer-watch>
+      <img src= "{% static 'img/2022-09-11 at 17.29.28.jpeg' %}">
+    </div>
+  </div>
+{% endblock content %}
+
+{% static 'img/2022-09-11 at 17.29.28.jpeg' %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+   Editar Empleado 
+{% endblock title %}
+
+
+{% block content %}
+     {% include 'includes/header.html' %}
+     <div class="grid-container">
+     <div class="grid-x">
+        <h1 class="cell">
+            MODIFICAR DATOS DEL EMPLEADO
+        </h1>
+     <form method="POST">{% csrf_token %}
+     {{ form.as_p}}
+     <button class="button alert">Actualizar</button>
+    </form>
+   </div>
+</div>
+{% endblock content %}
+    
+
+
